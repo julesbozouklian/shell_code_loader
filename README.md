@@ -34,6 +34,10 @@ On windows open a cmd or powershell terminal
 ./shell_code_loader.exe shell_code.txt
 ```
 
+### Tests
+| Edition  | Version  | OS Version | Date | Result |
+| :------- |:-------- | :--------- | :--- | :----- |
+Windows 10 Familly | 21H1 | 19043.928 | 15/07/2022 | OK |
 
 ### References
 https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc
